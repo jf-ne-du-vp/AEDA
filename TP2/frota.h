@@ -11,7 +11,7 @@ public:
     void adicionaVeiculo(Veiculo* v1);
     int numVeiculos() const;
     int menorAno() const;
-	friend ostream & operator<<(ostream & o, const Frota & f);  //this is declared as friend to have access to private members of classes
+    friend ostream & operator<<(ostream & o, const Frota & f);  //this is declared as friend to have access to private members of classes
     vector<Veiculo *> operator () (int anoM) const;
     float totalImposto() const;
 };
