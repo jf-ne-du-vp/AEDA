@@ -10,7 +10,6 @@ ParqueEstacionamento::ParqueEstacionamento(unsigned int lot, unsigned int nMaxCl
     numMaximoClientes = numMaximoClientes;
      */
     vagas = lot;
-    clientes.clear();  //to be sure that clients vector is initialized with 0 clients
 }
 
 unsigned int ParqueEstacionamento::getNumLugares() const
