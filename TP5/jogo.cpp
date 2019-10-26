@@ -145,9 +145,9 @@ list<Crianca> Jogo::baralha() const         //dont forget to use advance
 {
     list<Crianca> res, intermedia = criancas;
     int rand_index;
+    srand(time(nullptr));
 
     while(intermedia.size() > 0){
-        //srand(time(nullptr));
         rand_index = rand() % intermedia.size(); //(-1)  dont need to do this because of operator %
         auto it = intermedia.begin();
         advance(it,rand_index);
